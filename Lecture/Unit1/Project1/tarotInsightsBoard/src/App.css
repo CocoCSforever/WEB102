@@ -1,0 +1,122 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.tarot-detail .button {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 16px 0;
+  float: left;
+}
+
+.tarot-detail .button:hover {
+  background-color: #646cff;
+}
+
+.tarot-detail .button:focus,
+.tarot-detail .button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.app-header {
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tarot-card-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Centers the grid */
+  flex: 1; /* Ensures content fills available space */
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.tarot-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tarot-card:hover {
+  transform: scale(1.05);
+}
+
+.tarot-card img {
+  width: 100%;
+  height: auto;
+}
+
+.tarot-card-content {
+  padding: 16px;
+}
+
+.tarot-card-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: rgb(126, 102, 14);
+}
+
+.tarot-card-description {
+  font-size: 1em;
+  color: #666;
+}
+
+.tarot-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.tarot-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.tarot-detail h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tarot-detail p {
+  font-size: 1.2em;
+  margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+  color: #666;
+  text-align: center; /* Center the text */
+  max-width: 80%; /* Optional: Limit the width for better readability */
+}
+
+.tarot-detail h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.tarot-detail ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tarot-detail li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
