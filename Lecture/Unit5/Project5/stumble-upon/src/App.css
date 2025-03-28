@@ -1,0 +1,105 @@
+.container {
+  display: flex;   /* Enables horizontal layout */
+  height: 100vh;   /* Full viewport height */
+  margin: 0;
+  padding: 5;
+}
+
+.container > * {
+  flex: 1;  /* Makes each section take equal space */
+  /* border: 1px solid #ccc; Just for visualization */
+}
+
+.section-1 {
+  background-color: #e3f2fd; /* Light blue */
+  padding: 10px;
+  margin: 10px;
+}
+
+.section-2 {
+  background-color: #fce4ec; /* Light pink */
+  padding: 10px;
+  margin: 10px;
+}
+
+.section-3 {
+  background-color: #e8f5e9; /* Light green */
+  padding: 10px;
+  margin: 10px;
+}
+
+.tag-container {
+  display: flex; /* Enable Flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping if there are too many tags */
+  justify-content: center; /* Center tags horizontally */
+  gap: 10px; /* Add spacing between tags */
+}
+
+.tag {
+  /* width: 90px;
+  height: 30px; */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #93d0f1; /* Light gray background */
+  color: #333; /* Dark text color */
+  font-size: 14px; /* Adjust font size */
+  padding: 5px 10px; /* Add padding for a pill shape */
+  margin: 5px; /* Add spacing between tags */
+  border-radius: 10px; /* Rounded corners for a pill shape */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  text-align: center; /* Center text inside the tag */
+  cursor: pointer;
+}
+
+.tag.banned {
+  border: 2px solid red; /* Add a red border for banned tags */
+  background-color: #f8d7da; /* Light red background for banned tags */
+  color: #721c24; /* Dark red text color */
+}
+
+.dog-historys {
+  list-style: none; /* Remove bullet points for all <li> elements inside .dog-history */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.dog-history-container img {
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #ccc; /* Light gray border */
+  width: 40%; /* Make the image responsive */
+  max-width: 400px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add spacing below the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.button {
+  display: block; /* Ensures the button behaves like a block element */
+  margin: 0 auto; /* Centers the button horizontally */
+  padding: 10px 20px; /* Add padding for better appearance */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center text inside the button */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dog-finder {
+  text-align: center;
+}
+
+.dog-name {
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text horizontally */
+  margin: 10px 0; /* Add spacing above and below */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  letter-spacing: 1px; /* Add some spacing between letters */
+}
